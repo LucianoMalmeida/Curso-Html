@@ -1,0 +1,515 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+*,
+*::before,
+*,
+:after {
+    box-sizing: inherit;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(138, 133, 133);
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+}
+
+.parrafos {
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.color {
+
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    border: solid 0.3rem white;
+}
+
+/**--------------------Publicidad--------------------------------------**/
+
+.publicidad-ollivanders {
+    height: 19rem;
+    background-image: url(imagenes/publicidad-ollivanders.jpg);
+    margin: 1.5rem;
+}
+
+.publicidad-gringotts {
+    height: 19rem;
+    background-image: url(imagenes/publicidad-gringotts.jpg);
+    margin: 1.5rem;
+}
+
+.publicidad-flourish {
+    height: 19rem;
+    background-image: url(imagenes/publicidad-flourish.jpg);
+    margin: 1.5rem;
+}
+
+.publicidad-premium {
+    height: 19rem;
+    background-image: url(imagenes/publicidad-premium.jpg);
+    margin: 1.5rem;
+}
+
+@media only screen and (max-width:480px) {
+
+    .publicidad-premium,
+    .publicidad-flourish,
+    .publicidad-gringotts,
+    .publicidad-ollivanders {
+        display: none;
+    }
+}
+
+/** --------------------- Navegador----------------------------------**/
+
+.header-contenedor {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+
+.navegador a {
+    text-decoration: none;
+    margin: 1rem;
+    color: white;
+    display: flex;
+
+
+}
+
+.navegador a:hover {
+    color: rgb(43, 114, 161);
+
+
+
+}
+
+.menu-nav {
+    list-style: none;
+    display: flex;
+
+}
+
+
+
+/**-----------------------------Inicio--------------------------------**/
+
+.div-contenedor-inicio {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imagenes/fondo-hogwartes1-recortado.jpg);
+    position: relative;
+}
+
+.main-inicio {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-inicio {
+    background-image: linear-gradient(to bottom, rgb(43, 114, 161), black);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    padding: 4rem;
+    text-align: center;
+    color: white;
+    margin: 1rem 0rem;
+
+}
+
+.texto-flotando {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3rem;
+    left: 35rem;
+    width: 70rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+    padding: 3rem;
+
+}
+
+.texto-flotando p {
+    margin-left: 3rem;
+}
+
+.parrafos-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10rem 0rem;
+    align-items: center;
+    padding: 5rem;
+}
+
+.buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 69rem;
+    top: 30rem;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background: rgb(43, 114, 161);
+    padding: 1rem;
+    margin-top: 1rem;
+    height: 8rem;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.buscar-texto {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 2rem;
+    line-height: 6rem;
+    transition: 0.3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    width: 0;
+
+}
+
+.boton-buscador {
+
+    width: 4rem;
+    height: 4rem;
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+
+}
+
+@media only screen and (max-width:480px) {
+    .texto-flotando,
+    .buscar,
+    .buscar-texto,
+    .boton-buscador,
+    .imagen-fondo-inicio {
+        display: none;
+    }
+}
+
+
+
+/**--------- Responsive Buscador ----------------------------**/
+
+@media screen and (min-width:480px) {
+    .buscar:hover>.buscar-texto {
+        width: 19rem;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .buscar:hover>.buscar-texto {
+        width: 30rem;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .buscar:hover>.buscar-texto {
+        width: 50rem;
+    }
+
+}
+
+
+/**----------------------------------- Casas --------------------------**/
+
+.div-contenedor-casas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imagenes/Casas-hogwarts-fondo.jpg);
+    background-size: cover;
+
+}
+
+
+.div-casas {
+    height: 65rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+
+
+}
+
+.item-casas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item-casas h2,
+.item-casas p {
+    background-color: rgba(0, 0, 0, 0.50);
+    margin: 1rem;
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .div-casas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        height: 85rem
+    }
+
+}
+
+/** ----------------------------------- Cursos -------------------------**/
+
+.div-contenedor-cursos {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    
+
+}
+
+.inscribirse-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 90%;
+    padding: 2rem;
+    background: rgb(40, 41, 41, 0.90);
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+.boton {
+    background-color: rgb(43, 114, 161);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    margin-top: 1rem;
+    border: none;
+}
+
+
+@media only screen and (max-width:480px) {
+    .div-contenedor-cursos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        height: 160rem
+    }
+
+}
+
+
+/**------------------------------------Biblioteca-----------------------**/
+
+.div-contenedor-biblioteca {
+    background-image: url(imagenes/biblioteca-de-hogwarts.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 15%;
+
+
+}
+
+.parrafo-biblioteca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    font-weight: bold;
+    background: rgb(0, 0, 0, 0.30);
+    margin: 1rem;
+    border: solid 0.3rem white;
+    width: 90%;
+    height: 40%;
+
+}
+
+.buscador-biblioteca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 2rem;
+    color: white;
+    height: 8rem;
+
+
+
+}
+
+.div-contenedor-seccion-prohibida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0rem 5rem 0;
+    font-size: 5rem;
+
+}
+
+@media only screen and (max-width:480px) {
+    .parrafo-biblioteca{
+        font-size: 2rem;
+    }
+
+}
+
+
+/** -------------------------------- Quidditch -------------------------**/
+
+.div-contenedor-quidditch {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url(imagenes/snich-dorada.jpg);
+    background-size: cover;
+    margin: 2rem;
+
+}
+
+.partidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media only screen and (max-width:480px) {
+    .div-contenedor-quidditch{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr) ;
+    }
+}
+/**--------------------------------------Footer---------------------------**/
+
+.footer {
+    padding: 3rem;
+    height: 45rem;
+    background-color: black;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/**------------------------------------ Formulario-------------------**/
+
+.titulo-inicio-formulario {
+    background-color: goldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+    padding: 7rem;
+    margin: 5rem 1rem;
+    text-align: center;
+
+}
+
+.formulario {
+    width: 40rem;
+    background-color: rgb(21, 45, 61);
+    background-image: url(imagenes/lechuza.png);
+    background-size: cover;
+    padding: 3rem;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+
+
+}
+
+.item-formulario {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    border: solid 1px white;
+    background-color: rgb(21, 45, 61);
+}
+
+.formulario h4 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.etiqueta {
+    color: white;
+}
