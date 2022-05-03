@@ -82,30 +82,9 @@ body{
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
 
-
 }
-
-
-.navegador a {
-    text-decoration: none;
-    margin: 1rem;
-    color: white;
-    display: flex;
-
-
-}
-
-.navegador a:hover {
-    color: rgb(43, 114, 161);
-
-
-
-}
-
-.menu-nav {
-    list-style: none;
-    display: flex;
-
+.background-nav {
+    background-color: black;
 }
 
 
@@ -138,22 +117,7 @@ body{
 
 }
 
-.texto-flotando {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 3rem;
-    left: 35rem;
-    width: 70rem;
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px #000000;
-    color: white;
-    padding: 3rem;
 
-}
 
 .texto-flotando p {
     margin-left: 3rem;
@@ -320,7 +284,7 @@ body{
     justify-content: center;
     width: 80%;
     height: 90%;
-    padding: 2rem;
+    padding: 3rem;
     background: rgb(40, 41, 41, 0.90);
     border-radius: 1.5rem;
     -webkit-border-radius: 1.5rem;
@@ -332,7 +296,7 @@ body{
 .boton {
     background-color: rgb(43, 114, 161);
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 1rem 3rem;
     font-family: 'Open Sans', sans-serif;
@@ -345,6 +309,9 @@ body{
     border: none;
 }
 
+.background-cursos{
+    background-color: rgb(40, 41, 41, 0.90);
+}
 
 @media only screen and (max-width:480px) {
     .div-contenedor-cursos {
@@ -419,8 +386,9 @@ body{
 /** -------------------------------- Quidditch -------------------------**/
 
 .div-contenedor-quidditch {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(imagenes/snich-dorada.jpg);
     background-size: cover;
     margin: 2rem;
@@ -432,13 +400,17 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2rem;
     
+}
+
+.background-quidditch{
+    background-color:rgba(255,255,255,0.30) ;
 }
 
 @media only screen and (max-width:480px) {
     .div-contenedor-quidditch{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr) ;
+        flex-direction: column;
     }
 }
 /**--------------------------------------Footer---------------------------**/
