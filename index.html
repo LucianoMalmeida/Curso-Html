@@ -121,35 +121,37 @@
 
         <h2 class="titulo-inicio">Casas</h2>
 
+<!-------------Grid System-------------------------->
 
-        <div class="div-contenedor-casas">
-            <div class="div-casas">
-                <div class="item-casas">
-                    <h2 class="parrafos">Ravenclaw</h2>
-                    <p class="parrafos">Los miembros de esta casa se caracterizan por su ingenio, aprendizaje y
+        <div class="container div-contenedor-casas">
+<!------------row----------------------------->           
+            <div class="row">
+<!-----------col------------------------------>                
+                <div class="col-lg-3 col-sm-12">
+                    <h2 class="parrafos bg-color">Ravenclaw</h2>
+                    <p class="parrafos bg-color">Los miembros de esta casa se caracterizan por su ingenio, aprendizaje y
                         sabiduría. El símbolo animal emblemático es el águila, y el azul y el bronce son sus colores. El
                         Jefe de Ravenclaw actualmente es Filius Flitwick.</p>
                 </div>
-
-                <div class="item-casas">
-                    <h2 class="parrafos">Slytherin</h2>
-                    <p class="parrafos">La Casa Slytherin cuenta con miembros ambiciosos, inteligentes, muy astutos y
+<!------------col---------------------------------->
+                <div class="col-lg-3 col-sm-12">
+                    <h2 class="parrafos bg-color">Slytherin</h2>
+                    <p class="parrafos bg-color">La Casa Slytherin cuenta con miembros ambiciosos, inteligentes, muy astutos y
                         que tienden a ser líderes fuertes. Aunque también son unos supervivientes, lo que les hace
                         pensar antes de actuar (al contrario que los Gryffindor), pese a tener un claro desprecio por
                         las reglas.</p>
-
                 </div>
-
-                <div class="item-casas">
-                    <h2 class="parrafos">Hufflepuff</h2>
-                    <p class="parrafos">La Casa de Hufflepuff se caracteriza por valorar la capacidad de trabajo, con
+<!-------------col-------------------------------->
+                <div class="col-lg-3 col-sm-12">
+                    <h2 class="parrafos bg-color">Hufflepuff</h2>
+                    <p class="parrafos bg-color">La Casa de Hufflepuff se caracteriza por valorar la capacidad de trabajo, con
                         estudiantes amigables y leales. Los estudiantes de esta casa son conocidos por ser trabajadores,
                         amigables, leales y sin prejuicios.</p>
                 </div>
-
-                <div class="item-casas">
-                    <h2 class="parrafos">Gryffindor</h2>
-                    <p class="parrafos">Coraje y valentía. Un buen miembro de Gryffindor tiene gran osadía, temple y
+<!-----------col--------------------------------------->
+                <div class="col-lg-3 col-sm-12">
+                    <h2 class="parrafos bg-color">Gryffindor</h2>
+                    <p class="parrafos bg-color">Coraje y valentía. Un buen miembro de Gryffindor tiene gran osadía, temple y
                         caballerosidad. Son capaces de todo por defender en lo que creen y nunca se dan por vencidos.
                         También son capaces de romper las reglas si es necesario y les encantan los retos, cuanto más
                         difíciles, mejor.</p>
@@ -223,13 +225,32 @@
         </div>
 
         <div class="div-contenedor-biblioteca">
-            <div class="parrafo-biblioteca">
-                <p class="parrafos">¿Qué libro estás buscando?</p>
-            </div>
-            <div class="buscador-biblioteca">
-                <input type="search" placeholder="Busca Aqui" size="50px">
-                <input type="submit" placeholder="Enviar" class="boton">
-            </div>
+            
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagenes/foto-carrusel-biblioteca.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/foto-carrusel-biblioteca2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
+        
         </div>
 
         <div class="publicidad-premium" data-aos="zoom-in" data-aos-duration="2000">
