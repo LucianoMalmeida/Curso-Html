@@ -19,7 +19,7 @@ html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-size: 16px;
 }
 
@@ -83,6 +83,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 
 }
+
 .background-nav {
     background-color: black;
 }
@@ -181,6 +182,7 @@ body{
 }
 
 @media only screen and (max-width:480px) {
+
     .texto-flotando,
     .buscar,
     .buscar-texto,
@@ -226,10 +228,10 @@ body{
     background-image: url(imagenes/Casas-hogwarts-fondo.jpg);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.50);
-   
+
 }
 
-.bg-color{
+.bg-color {
     background-color: rgba(0, 0, 0, 0.50);
 }
 
@@ -242,7 +244,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2rem;
-    
+
 
 }
 
@@ -279,7 +281,7 @@ body{
     border: none;
 }
 
-.background-cursos{
+.background-cursos {
     background-color: rgb(40, 41, 41, 0.90);
 }
 
@@ -339,7 +341,7 @@ body{
 }
 
 @media only screen and (max-width:480px) {
-    .parrafo-biblioteca{
+    .parrafo-biblioteca {
         font-size: 2rem;
     }
 
@@ -364,18 +366,19 @@ body{
     justify-content: center;
     align-items: center;
     margin: 2rem;
-    
+
 }
 
-.background-quidditch{
-    background-color:rgba(255,255,255,0.30) ;
+.background-quidditch {
+    background-color: rgba(255, 255, 255, 0.30);
 }
 
 @media only screen and (max-width:480px) {
-    .div-contenedor-quidditch{
+    .div-contenedor-quidditch {
         flex-direction: column;
     }
 }
+
 /**--------------------------------------Footer---------------------------**/
 
 .footer {
@@ -391,6 +394,28 @@ body{
 }
 
 /**------------------------------------ Formulario-------------------**/
+
+@media screen and (max-width:450px) {
+    .titulo-inicio,
+    .footer,
+    .header-contenedor {
+        display: none;
+
+        
+    }
+
+    body{
+        background-color:rgb(21, 45, 61) ;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+}
+
+
+
+
 
 .titulo-inicio-formulario {
     background-color: goldenrod;
@@ -418,7 +443,7 @@ body{
     -o-border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
     color: white;
-    box-shadow: 7px 13px 37px #000;
+
 
 
 }

@@ -1,0 +1,27 @@
+%flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+%titulo-inicio{
+    background-image: linear-gradient(to bottom, rgb(43, 114, 161), black);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    padding: 4rem;
+    text-align: center;
+    color: white;
+    margin: 1rem 0rem;
+}
+
+%parrafos{
+    padding: 1rem;
+    color: red;
+    text-align: center;
+}
+
+%bg-color{
+    background-color: rgba(0, 0, 0, 0.50);
+}

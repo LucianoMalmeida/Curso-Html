@@ -1,0 +1,19 @@
+section {
+    .titulo-inicio {
+        @extend %titulo-inicio;
+
+        .div-contenedor-casas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url(../imagenes/Casas-hogwarts-fondo.jpg);
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.50);
+
+            p{
+                @extend %parrafos;
+            }
+        }
+    }
+}
