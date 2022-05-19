@@ -1,0 +1,9 @@
+
+
+@mixin flex ($flex, $flex-direction, $align, $content){
+    display: $flex;
+    flex-direction: $flex-direction;
+    align-items: $align;
+    justify-content: $content;
+    
+}
