@@ -35,7 +35,7 @@ body {
 }
 
 .div-contenedor-inicio {
-  background-image: url(../imagenes/fondo-hogwartes1-recortado.jpg);
+  background-image: url(../../imagenes/fondo-hogwartes1-recortado.jpg);
 }
 .div-contenedor-inicio .main-inicio {
   display: flex;
@@ -77,9 +77,44 @@ section .titulo-inicio .div-contenedor-casas {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(../imagenes/Casas-hogwarts-fondo.jpg);
+  background-image: url(../../imagenes/Casas-hogwarts-fondo.jpg);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+/**--------------------Publicidad--------------------------------------**/
+.publicidad-ollivanders {
+  height: 19rem;
+  background-image: url(../../imagenes/publicidad-gringotts.jpg);
+  margin: 1.5rem;
+}
+
+.publicidad-gringotts {
+  height: 19rem;
+  background-image: url(../../imagenes/publicidad-flourish.jpg);
+  margin: 1.5rem;
+}
+
+.publicidad-flourish {
+  height: 19rem;
+  background-image: url(../../imagenes/publicidad-flourish.jpg);
+  margin: 1.5rem;
+}
+
+.publicidad-premium {
+  height: 19rem;
+  background-image: url(../../imagenes/publicidad-premium.jpg);
+  margin: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .publicidad-premium,
+.publicidad-flourish,
+.publicidad-gringotts,
+.publicidad-ollivanders {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
