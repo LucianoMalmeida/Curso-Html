@@ -20,6 +20,35 @@ html {
 
 body {
   font-size: 16px;
+  background-color: black;
+}
+
+.parrafos {
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.color {
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  border: solid 0.3rem white;
+}
+
+.boton {
+  background-color: rgb(43, 114, 161);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  margin-top: 1rem;
+  border: none;
 }
 
 .header-contenedor {
@@ -35,13 +64,13 @@ body {
 }
 
 .div-contenedor-inicio {
-  background-image: url(../imagenes/fondo-hogwartes1-recortado.jpg);
+  background-image: url(../../imagenes/fondo-hogwartes1-recortado.jpg);
 }
 .div-contenedor-inicio .main-inicio {
   display: flex;
   flex-direction: column;
 }
-.div-contenedor-inicio .main-inicio .titulo-inicio .parrafos-contenedor {
+.div-contenedor-inicio .main-inicio .parrafos-contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 10rem 0rem;
@@ -56,7 +85,7 @@ body {
   justify-content: center;
 }
 
-section .titulo-inicio, .div-contenedor-inicio .main-inicio .titulo-inicio {
+.titulo-inicio {
   background-image: linear-gradient(to bottom, rgb(43, 114, 161), black);
   font-family: "Open Sans", sans-serif;
   font-size: 4rem;
@@ -66,20 +95,123 @@ section .titulo-inicio, .div-contenedor-inicio .main-inicio .titulo-inicio {
   margin: 1rem 0rem;
 }
 
-section .titulo-inicio .div-contenedor-casas p {
-  padding: 1rem;
-  color: red;
-  text-align: center;
-}
-
-section .titulo-inicio .div-contenedor-casas {
+#casas .div-contenedor-casas {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(../imagenes/Casas-hogwarts-fondo.jpg);
+  background-image: url(../../imagenes/Casas-hogwarts-fondo.jpg);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/**--------------------Publicidad--------------------------------------**/
+.publicidad-ollivanders {
+  height: 19rem;
+  background-image: url(../../imagenes/publicidad-ollivanders.jpg);
+  margin: 1.5rem;
+}
+
+.publicidad-gringotts {
+  height: 19rem;
+  background-image: url(../../imagenes/publicidad-flourish.jpg);
+  margin: 1.5rem;
+}
+
+.publicidad-flourish {
+  height: 19rem;
+  background-image: url(../../imagenes/publicidad-flourish.jpg);
+  margin: 1.5rem;
+}
+
+.publicidad-premium {
+  height: 19rem;
+  background-image: url(../../imagenes/publicidad-premium.jpg);
+  margin: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .publicidad-premium,
+.publicidad-flourish,
+.publicidad-gringotts,
+.publicidad-ollivanders {
+    display: none;
+  }
+}
+#quidditch .div-contenedor-quidditch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../imagenes/snich-dorada.jpg);
+  background-size: cover;
+  margin: 2rem;
+}
+#quidditch .div-contenedor-quidditch .partidos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.background-quidditch {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (max-width: 450px) {
+  .div-contenedor-quidditch {
+    flex-direction: column;
+  }
+}
+#cursos .div-contenedor-cursos {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+}
+#cursos .div-contenedor-cursos .inscribirse-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 90%;
+  padding: 3rem;
+  background: rgba(40, 41, 41, 0.9);
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+#cursos .div-contenedor-cursos .inscribirse-item .boton {
+  background-color: rgb(43, 114, 161);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  margin-top: 1rem;
+  border: none;
+}
+
+.background-cursos {
+  background-color: rgba(40, 41, 41, 0.9);
+}
+
+@media only screen and (max-width: 480px) {
+  .div-contenedor-cursos {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 160rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

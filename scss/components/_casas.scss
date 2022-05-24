@@ -1,18 +1,16 @@
+
 @import "../base/mixin";
 
-section {
-    .titulo-inicio {
-        @extend %titulo-inicio;
 
+#casas {
         .div-contenedor-casas {
-            @include flex (flex, column, center, center);
-            background-image: url(../imagenes/Casas-hogwarts-fondo.jpg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url(../../imagenes/Casas-hogwarts-fondo.jpg);
             background-size: cover;
             background-color: rgba(0, 0, 0, 0.50);
-
-            p{
-                @extend %parrafos;
-            }
+            
         }
     }
-}
