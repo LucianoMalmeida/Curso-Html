@@ -6,9 +6,11 @@ section {
 
         .div-contenedor-casas {
             @include flex (flex, column, center, center);
-            background-image: url(../imagenes/Casas-hogwarts-fondo.jpg);
+            background-image: url(../../imagenes/Casas-hogwarts-fondo.jpg);
             background-size: cover;
             background-color: rgba(0, 0, 0, 0.50);
+            width: 100%;
+            height: 100%;
 
             p{
                 @extend %parrafos;
