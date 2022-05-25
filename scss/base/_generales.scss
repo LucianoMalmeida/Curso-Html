@@ -20,4 +20,39 @@ html {
 
 body{
     font-size: 16px;
+    background-color: black
+}
+
+.titulo-inicio {
+    @extend %titulo-inicio;
+
+}
+
+.parrafos {
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.color {
+
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+    border: solid 0.3rem white;
+}
+.boton {
+    background-color: rgb(43, 114, 161);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    margin-top: 1rem;
+    border: none;
+
 }
