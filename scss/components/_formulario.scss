@@ -1,0 +1,73 @@
+.formulario-fondo {
+    .titulo-inicio-formulario {
+        background-color: goldenrod;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 5rem;
+        padding: 7rem;
+        margin: 5rem 1rem;
+        text-align: center;
+
+    }
+
+    .formulario {
+        background-color: rgb(21, 45, 61);
+        background-image: url(imagenes/lechuza.png);
+        background-size: cover;
+        padding: 3rem;
+        margin: auto;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        border-radius: 0.4rem;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+
+        .item-formulario {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 0.4rem;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            margin-bottom: 16px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.8rem;
+            border: solid 1px white;
+            background-color: rgb(21, 45, 61);
+        }
+    }
+}
+
+
+.formulario h4 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.etiqueta {
+    color: white;
+}
+
+@media screen and (max-width:450px) {
+    .titulo-inicio,
+    .footer,
+    .header-contenedor {
+        display: none;
+
+        
+    }
+
+    body{
+        background-color:rgb(21, 45, 61) ;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+}
