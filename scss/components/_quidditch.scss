@@ -19,14 +19,16 @@
     }
 }
 
-.background-quidditch {
-    background-color: rgba(255, 255, 255, 0.30);
-}
+
 
 @media only screen and (max-width:450px) {
     .div-contenedor-quidditch {
         flex-direction: column;
+
     }
     
 }
 
+.bg-color{
+    background-color:rgb(43, 114, 161) ;
+}

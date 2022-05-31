@@ -16,13 +16,7 @@
             justify-content: center;
             width: 20%;
             height: 20%;
-            padding: 3rem;
-            background: rgb(40, 41, 41, 0.90);
-            border-radius: 1.5rem;
-            -webkit-border-radius: 1.5rem;
-            -moz-border-radius: 1.5rem;
-            -ms-border-radius: 1.5rem;
-            -o-border-radius: 1.5rem;
+            padding: 1rem;
            
             .boton {
                 background-color: rgb(43, 114, 161);
@@ -52,11 +46,14 @@
 }
 
 @media only screen and (max-width:450px) {
-    .inscribirse-item {
+    #cursos .div-contenedor-cursos{
+        display: inline-block;
+       
         
     }
-
 }
+
+
 
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
