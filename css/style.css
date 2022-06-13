@@ -211,6 +211,7 @@ body {
 @media only screen and (max-width: 450px) {
   #cursos .div-contenedor-cursos {
     display: inline-block;
+    flex-direction: column;
   }
 }
 .grow {
